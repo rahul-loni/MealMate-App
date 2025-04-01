@@ -9,12 +9,12 @@
     <LinearLayout
         android:layout_width="306dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_margin="10dp"
         android:background="@drawable/card_bg"
         android:elevation="6dp"
         android:orientation="vertical"
-        android:padding="12dp">
+        android:padding="12dp"
+        android:paddingBottom="20dp">
 
         <!-- Meal Image (Bigger and Centered) -->
         <de.hdodenhof.circleimageview.CircleImageView
@@ -32,7 +32,6 @@
             android:id="@+id/meal_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="4dp"
             android:ellipsize="end"
             android:maxLines="1"
@@ -46,7 +45,6 @@
             android:id="@+id/meal_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="4dp"
             android:text="Category"
             android:textColor="#EDFFFFFF"
@@ -57,7 +55,6 @@
             android:id="@+id/meal_day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="6dp"
             android:text="Monday"
             android:textColor="#FFFFFF"

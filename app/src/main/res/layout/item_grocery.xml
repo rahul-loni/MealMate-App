@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="16dp"
-    android:background="@drawable/dark_item_card_bg"
+    android:background="#737373"
     android:layout_margin="12dp"
     android:elevation="8dp">
 
@@ -15,7 +15,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/mealmate_logo"
+        android:src="@drawable/mealmate"
         android:layout_marginEnd="16dp"
         android:contentDescription="Item Image" />
 

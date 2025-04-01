@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="#1E1E1E">
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -127,8 +127,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Update Item"
-            android:backgroundTint="#E4D235"
-            android:textColor="@color/black"
+            android:backgroundTint="#121211"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:padding="12dp"
             android:elevation="4dp"

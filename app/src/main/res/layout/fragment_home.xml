@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
-    android:background="#121212">
+    android:background="#494747">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,10 +27,10 @@
                 android:id="@+id/welcome_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome Back, Anusha! 🍽️"
+                android:text="Welcome Back ! 🍽️"
                 android:textSize="22sp"
                 android:layout_marginTop="40dp"
-                android:textColor="#ffdc00"
+                android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:gravity="center"/>
 
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:text="🍳 Chef's Picks for Today"
             android:textSize="18sp"
-            android:textColor="#ffdc00"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
 
@@ -80,10 +80,10 @@
             android:id="@+id/favorite_meals_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="⭐ Your All-Time Favorites"
+            android:text=" Your All-Time Favorites"
             android:textSize="18sp"
             android:layout_marginVertical="10dp"
-            android:textColor="#ffdc00"
+            android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"/>
 
@@ -110,9 +110,9 @@
             android:id="@+id/category_filter_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🍔 Browse by Category"
+            android:text="Browse by Category"
             android:textSize="18sp"
-            android:textColor="#ffdc00"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
 
