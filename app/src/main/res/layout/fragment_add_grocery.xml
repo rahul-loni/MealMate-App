@@ -21,7 +21,7 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
-            android:src="@drawable/mealmate_logo"
+            android:src="@drawable/mealmate"
             android:background="@drawable/image_border"
             android:layout_marginBottom="12dp" />
 
@@ -34,6 +34,7 @@
             android:text="Select Image"
             android:backgroundTint="#F0DB20"
             android:textColor="@color/black"
+
             android:padding="8dp"
             android:layout_marginBottom="16dp"/>
 
@@ -43,9 +44,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Item Name"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/black"
             android:inputType="text"
-            android:background="@drawable/edittext_bg"
+            android:background="@color/white"
             android:padding="12dp"
             android:textColor="@color/white"
             android:textSize="16sp"

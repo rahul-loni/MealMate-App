@@ -67,11 +67,11 @@ public class ProfileFragment extends Fragment {
 
     private void loadUserProfile() {
         // Fetch current user data (just get the first user in the table)
-        currentUser = userDAO.getUser("Anusha"); // A new method to get the first user from the database
+        currentUser = userDAO.getUser("Enter Profile Name "); // A new method to get the first user from the database
 
         if (currentUser == null) {
             // If no user data is found, set default values
-            currentUser = new User("Anusha", "", "This is a bio");
+            currentUser = new User("Enter Name", "", "This is a bio");
 
             // Optionally, set a default image URI
             Glide.with(getContext()).load(R.drawable.mealmate_logo).into(profileImageView);
