@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="200dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#AE1A1A1A"> <!-- Dark background -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+       > <!-- Custom dark gradient background -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Circular Meal Image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/search_meal_image"
+                android:layout_width="275dp"
+                android:layout_height="250dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Meal Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <!-- Meal Name -->
+            <TextView
+                android:id="@+id/search_meal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:paddingTop="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center"/>
+
+            <!-- Meal Category -->
+            <TextView
+                android:id="@+id/search_meal_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="14sp"
+                android:textColor="#FFD700"
+            android:gravity="center"/>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

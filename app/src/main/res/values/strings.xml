@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MealMate</string>
+    <string name="todo">TODO </string>
+    <string name="search_button_text">Search</string>
+    <string name="no_meals_found">No meals found</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_not_found">User not found</string>"
+    <string-array name="days_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="meal_categories">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snack</item>
+    </string-array>
+
+    <string-array name="grocery_categories">
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Dairy &amp; Eggs</item>
+        <item>Meat &amp; Seafood</item>
+        <item>Grains &amp; Pasta</item>
+        <item>Beverages</item>
+        <item>Snacks</item>
+        <item>Frozen Foods</item>
+        <item>Baking &amp; Cooking</item>
+        <item>Condiments &amp; Sauces</item>
+        <item>Household Essentials</item>
+    </string-array>
+
+
+</resources>

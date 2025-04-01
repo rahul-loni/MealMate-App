@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/dark_item_card_bg"
+    android:layout_margin="12dp"
+    android:elevation="8dp">
+
+    <!-- Item Image with Circular Border -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/itemImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mealmate_logo"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Item Image" />
+
+    <!-- Item Details -->
+    <LinearLayout
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!-- Item Name -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Item Name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Item Price -->
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Price"
+            android:textColor="#FFD700"
+            android:textSize="16sp" />
+
+        <!-- Item Quantity -->
+        <TextView
+            android:id="@+id/itemQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Quantity"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+        <!-- Item Category -->
+        <TextView
+            android:id="@+id/itemCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Category"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+        <!-- Store Location -->
+        <TextView
+            android:id="@+id/storeLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Store Location"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Purchased Status Icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/purchasedStatus"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Purchased Status"
+            android:src="@drawable/baseline_radio_button_unchecked_24"
+            app:tint="#4CAF50" />
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="69dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#3A3A3A"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="Edit"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <!-- Share Button -->
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:backgroundTint="#455A64"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="Share"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</LinearLayout>

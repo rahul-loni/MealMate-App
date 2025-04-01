@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:id="@+id/main"
+    android:padding="10dp"
+    >
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="346dp"
+        android:layout_height="305dp"
+        android:src="@drawable/mealmate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text=" Fuel your day, the healthy way! "
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:lineHeight="20dp"
+        android:textStyle="italic" />
+
+
+</LinearLayout>

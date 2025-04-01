@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#DC1E1E1E"
+        android:elevation="4dp"
+        android:paddingBottom="24dp">
+
+        <!-- Meal Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/meal_image"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Meal Image"
+            android:background="@drawable/card_bg"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Meal Name & Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/meal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/meal_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#CCCCCC"
+                android:textStyle="italic"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Meal Instructions Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/meal_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#DDDDDD"
+            android:lineSpacingExtra="5dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Ingredients Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#DDDDDD"
+            android:lineSpacingExtra="5dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Grocery & Favorite Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/add_to_grocery_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Add to Grocery"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF9800"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:elevation="4dp"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/toggle_favorite_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Favorite"
+                android:textColor="#FDFFFFFF"
+                android:backgroundTint="#E91E63"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:elevation="4dp" />
+        </LinearLayout>
+
+        <!-- Select Day Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Day"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/day_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_bg"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/delete_meal_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Meal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF3333"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

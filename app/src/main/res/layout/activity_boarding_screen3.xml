@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/mealmate"
+        android:contentDescription="MealMate Logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Grocery List is Ready to Go!"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="12dp"
+        android:textAlignment="center"/>
+
+
+
+    <!-- Page Indicator -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:alpha="0.4"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:radius="5dp"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:alpha="0.4"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:radius="5dp"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:alpha="1.0"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:radius="5dp"/>
+    </LinearLayout>
+
+    <!-- Get Started Button -->
+    <Button
+        android:id="@+id/btn_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Get Started"
+        android:textColor="#121212"
+        android:textSize="16sp"
+        android:backgroundTint="#ffdc00"
+        android:elevation="3dp"
+        android:fontFamily="sans-serif-medium"
+       />
+</LinearLayout>

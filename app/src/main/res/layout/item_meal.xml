@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_bg"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Meal Image (Bigger and Centered) -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/meal_image"
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="meal_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <!-- Meal Name -->
+        <TextView
+            android:id="@+id/meal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Meal Name"
+            android:textColor="#ffdc00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Meal Category -->
+        <TextView
+            android:id="@+id/meal_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="Category"
+            android:textColor="#EDFFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Meal Day -->
+        <TextView
+            android:id="@+id/meal_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="Monday"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

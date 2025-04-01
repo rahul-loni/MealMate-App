@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    android:padding="24dp"
+    tools:context=".ui.ProfileFragment">
+
+    <!-- Profile Image with Shadow -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="167dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/card_bg"
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mealmate_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Username Label -->
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Username"
+        android:textColor="#CCCCCC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+    <!-- Username EditText with Rounded Corners and Shadow -->
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:background="@drawable/edittext_bg"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintTop_toBottomOf="@id/username_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Bio Label -->
+    <TextView
+        android:id="@+id/bio_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Bio"
+        android:textColor="#CCCCCC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_username" />
+
+    <!-- Bio EditText with Multi-line support and Shadow -->
+    <EditText
+        android:id="@+id/edit_bio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your bio"
+        android:inputType="textMultiLine"
+        android:background="@drawable/edittext_bg"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintTop_toBottomOf="@id/bio_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Upload Image Button with Gradient Background -->
+    <Button
+        android:id="@+id/upload_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#3A3A3A"
+        android:padding="12dp"
+        android:text="Upload Image"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_bio" />
+
+    <!-- Save Profile Button with Shadow Effect -->
+    <Button
+        android:id="@+id/save_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Profile"
+        android:backgroundTint="#3A3A3A"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:elevation="6dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/upload_image_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Edit Profile Button with Rounded Corners -->
+    <Button
+        android:id="@+id/edit_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:elevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/save_profile_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
